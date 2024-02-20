@@ -24,6 +24,6 @@ app.use(express.static(path.join(__dirname, "../../frontend/dist")))
 app.use("/api/auth", authRoutes)
 app.use("/api/users", userRoutes)
 
-app.listen(7000, ()=>{
+app.listen(80, ()=>{
     console.log('run')
 })
