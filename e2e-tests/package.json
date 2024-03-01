@@ -1,24 +1,17 @@
 {
   "name": "e2e-tests",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.41.2",
-    "@types/node": "^20.11.19",
-    "dirname": "^0.1.0",
-    "typescript": "^5.3.3"
-  },
-  "directories": {
-    "test": "tests"
-  },
-  "dependencies": {
-    "playwright": "^1.41.2",
-    "playwright-core": "^1.41.2",
-    "undici-types": "^5.26.5"
-  },
-  "description": ""
+    "@playwright/test": "^1.42.0",
+    "@types/node": "^20.11.24"
+  }
 }
