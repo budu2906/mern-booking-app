@@ -2,6 +2,7 @@ import { Navigate, Route, BrowserRouter as Router, Routes } from '../node_module
 import { useAppContext } from './contexts/AppContext'
 import Layout from './layouts/Layout'
 import AddHotel from './pages/AddHotel'
+import EditHotel from './pages/EditHotel'
 import MyHotels from './pages/MyHotels'
 import Register from './pages/Register'
 import SignIn from './pages/SignIn'
@@ -17,6 +18,9 @@ const App = () => {
         <Route path="/sign-in" element={<SignIn/>} />
         {isLoggedIn && <>
         <Route path='/add-hotel' element={<AddHotel/>}/>
+        </>}
+        {isLoggedIn && <>
+        <Route path='/edit-hotel/:hotelId' element={<EditHotel/>}/>
         </>}
         {isLoggedIn && <>
         <Route path='/my-hotels' element={<MyHotels/>}/>
